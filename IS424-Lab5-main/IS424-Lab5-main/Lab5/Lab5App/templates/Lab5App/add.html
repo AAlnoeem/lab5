@@ -1,0 +1,17 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'Lab5App/style.css'%}">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Welcome to the form</h1>
+    <form action="{% url 'Lab5App:add'%}", method="post">
+        {{ form }}
+        {% csrf_token %}
+    <input type="submit">
+    </form>
+    <a href="{%url 'Lab5App:default'%}">Show people added</a>
+</body>
+</html>

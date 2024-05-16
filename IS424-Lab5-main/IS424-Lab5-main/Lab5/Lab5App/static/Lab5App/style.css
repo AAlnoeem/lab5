@@ -1,0 +1,11 @@
+body{
+    font-size: 30px;
+    text-align: center;
+    background-color: bisque;
+}
+
+div{
+    text-align: left;
+    width: 750px;
+    margin: auto;
+}
